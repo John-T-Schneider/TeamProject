@@ -66,8 +66,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registerButton"
-        android:id="@+id/registerButton"
+        android:text="@string/newAccountButton"
+        android:id="@+id/newAccountButton"
         android:layout_below="@+id/loginButton"
         android:layout_alignRight="@+id/loginButton"
         android:layout_alignEnd="@+id/loginButton"
