@@ -5,6 +5,8 @@
     <string name="password">Password:</string>
 
     <string name="loginButton">Login</string>
+    <string name="rememberCheckbox">Stay Logged In</string>
+    <string name="registerButton">Register New Account</string>
 
     <string name="action_settings">Settings</string>
 </resources>
