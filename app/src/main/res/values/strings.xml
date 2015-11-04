@@ -15,5 +15,8 @@
 
     <string name="registerButton">Create Account</string>
 
+    <string name="addRss">Enter RSS Feed URL:</string>
+    <string name="addFeedButton">Add RSS Feed</string>
+
     <string name="action_settings">Settings</string>
 </resources>
