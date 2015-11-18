@@ -1,17 +1,47 @@
 package edu.kvcc.cis298.workwithclasses.teamproject;
 
+//import android.app.FragmentManager;
+//import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(R.layout.addfeed);
+=======
+        setContentView(R.layout.main);
+
+        if (savedInstanceState == null){
+            addRssFragment();
+        }
     }
+
+    //puts the new fragment into the correct place in the layout main.xml
+    private void addRssFragment() {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        RssReader fragment = new RssReader();
+        transaction.add(R.id.container, fragment);
+        transaction.commit();
+
+>>>>>>> 8eb6b23ed97b306369bafb18e214d28231480f83
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putBoolean("fragment_added", true);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
