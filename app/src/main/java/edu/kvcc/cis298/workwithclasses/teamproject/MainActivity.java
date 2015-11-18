@@ -15,9 +15,7 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         setContentView(R.layout.addfeed);
-=======
         setContentView(R.layout.main);
 
         if (savedInstanceState == null){
@@ -33,7 +31,6 @@ public class MainActivity extends FragmentActivity {
         transaction.add(R.id.container, fragment);
         transaction.commit();
 
->>>>>>> 8eb6b23ed97b306369bafb18e214d28231480f83
     }
 
     @Override
